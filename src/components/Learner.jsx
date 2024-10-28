@@ -11,7 +11,7 @@ function Learner(){
           <li key={learner.id}>
             <h2>{learner.name}</h2>
             <p>{learner.bio}</p>
-            <Score />
+            <Score scores={learner.scores}/>
           </li>
         ))}
       </ul>

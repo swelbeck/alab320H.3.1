@@ -11,13 +11,11 @@ function App() {
     learners: []
   })
   let newLearnerArr = [...learners];
-  console.log(newLearnerArr[0].scores[0])
+  // console.log(newLearnerArr[0].scores[0])
 
   return (
     <main>
-
       <Learner/>
-      <Score />
     </main>
   )
 }

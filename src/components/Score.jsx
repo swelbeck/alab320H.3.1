@@ -3,9 +3,15 @@
 // imports
 import learners from "../utilities/data.mjs";
 
-function Score(){
+function Score({scores}){
+    
     return(
-        <h3>Score Data</h3>
+       <div>
+        {scores.map((scoreData) => (
+        <p key={scoreData.id}>{scoreData.date}: {scoreData.score}</p>
+      ))}
+       </div>
+        
         
     )
 }
