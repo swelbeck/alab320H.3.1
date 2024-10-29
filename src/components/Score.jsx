@@ -1,8 +1,5 @@
 // ./src/components/Score.jsx
 
-// imports
-import learners from "../utilities/data.mjs";
-
 function Score({scores}){
     
     return(
@@ -10,9 +7,7 @@ function Score({scores}){
         {scores.map((scoreData) => (
         <p key={scoreData.id}>{scoreData.date}: {scoreData.score}</p>
       ))}
-       </div>
-        
-        
+       </div>    
     )
 }
 
