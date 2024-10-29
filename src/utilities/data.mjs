@@ -38,11 +38,12 @@ const learners = [
         score: 79,
       },
       {
+        id: "2c",
         date: "2019-02-23",
         score: 91,
       },
       {
-        id: "2c",
+        id: "2d",
         date: "2019-03-01",
         score: 95,
       },
