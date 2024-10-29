@@ -2,19 +2,18 @@
 
 // imports
 import Score from "./Score";
-import learners from "../utilities/data.mjs";
 
-function Learner(){
+function Learner({learners}){
     return(
-        <ul>
-        {learners.map((learner) => (
-          <li key={learner.id}>
-            <h2>{learner.name}</h2>
-            <p>{learner.bio}</p>
-            <Score scores={learner.scores}/>
-          </li>
-        ))}
-      </ul>
+         <ul>
+            {learners.map((learner) => (
+                <li key={learner.id}>
+                    <h2>{learner.name}</h2>
+                    <p>{learner.bio}</p>
+                    <Score scores={learner.scores} />
+                    </li>
+                ))}        
+        </ul>
     )
 }
 
